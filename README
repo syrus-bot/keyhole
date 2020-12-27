@@ -76,4 +76,4 @@ Usage
     subdirectories by default without -R enabled), a single file to
     scan, or a list of files, specified as follows:
 
-    keyhole [options] <path1> <path2> etc.
+    keyhole [options] <languages-path> <path1> [...path2, path3, etc.]
