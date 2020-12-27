@@ -1,0 +1,79 @@
+Kludge Cyber Systems                                          T. Russell
+Manual Document                                           Technical Lead
+Intended Status: Informational                              Dec 27, 2020
+
+                                Keyhole
+                           Syrus-Bot/Keyhole
+
+Abstract
+
+    Keyhole, hereon referred to as "the program" or simply by name, is a
+    command-line utility written in TypeScript designed to find
+    untranslated or missing keys for use in Sapphire Framework projects
+    using either i18next or @scp/in17n.  It is designed to follow the
+    KCS specification adaptation of the Plan 9 design philosophy, for
+    speed, elegance, and simplicity.
+
+    It will also include in the future a GitHub actions workflow, to
+    allow people to detect untranslated or orphaned keys automatically
+    as part of their CI / DevOps workflows.
+
+Status of This Memo
+
+    This document is considered a Work-In-Progress, and as such is
+    subject to change at any time.  It may be reviewed, redrafted, or
+    redacted altogether later in time by an internal employee of KCS.
+    In its present state it should be taken as a concept only.
+
+Copyright
+
+    This document, along with all others published by KCS unless
+    explicitly stated otherwise, is dedicated to the public domain
+    in the interest of preserving freedoms and practicing what we
+    preach.  However, if your country's braindead copyright law does not
+    recognize the public domain, it is also made available as part of
+    the program under the terms of the MIT license.
+
+    All we ask is that if you are to create any derivative works or take
+    inspiration from us, you give us proper credit.  Aside from that,
+    our only hope is that our work serves useful to whomever may find
+    it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Russell                                                         [Page 1]
+
+Manual Document                Keyhole                  27 December 2020
+
+
+Usage
+
+    keyhole [-R] [-U] <languages-path> <path>
+
+        -R	-	(R)ecursively scan directory
+
+        -U	-	Show (U)nused keys mode
+        		This will show all keys that are available in translation
+        		but are not used in any files.
+
+        The default behaviour is to show untranslated keys.
+
+    <languages-path> should be the singular path (directory or file) to
+    query the keys for, no matter the mode.
+
+    <path> should be a directory to search all files in (will not scan
+    subdirectories by default without -R enabled), a single file to
+    scan, or a list of files, specified as follows:
+
+    keyhole [options] <path1> <path2> etc.
