@@ -39,5 +39,6 @@ describe("argument parsing", function () {
 			["LICENSE", "README"], false, false, false
 		);
 		test("node main.js LICENSE README", mockResults);
+		test("node main.js faultypath LICENSE README", mockResults);
 	});
 });
