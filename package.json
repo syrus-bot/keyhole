@@ -1,7 +1,7 @@
 {
-	"name": "syrus-PROJECT",
+	"name": "@syrus/keyhole",
 	"version": "1.0.0",
-	"description": "PROJECT DESCRIPTION",
+	"description": "A CLI tool for detecting untranslated keys using i18next and @scp/in17n.",
 	"main": "src/main.js",
 	"scripts": {
 		"start": "npm run lint && cd src && node main",
@@ -10,9 +10,9 @@
 		"gpr": "git pull && npm start"
 	},
 	"author": {
-		"name": "AUTHOR USERNAME (FULL NAME)",
-		"email": "AUTHOR EMAIL",
-		"url": "AUTHOR GITHUB / PERSONAL SITE"
+		"name": "Nytelife26 (Tyler J. Russell)",
+		"email": "nytelife@protonmail.com",
+		"url": "https://github.com/Nytelife26"
 	},
 	"contributors": [],
 	"license": "MIT",
@@ -45,13 +45,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/syrus-bot/PROJECT.git"
+		"url": "git+https://github.com/syrus-bot/keyhole.git"
 	},
 	"engines": {
 		"node": ">=14.0.0"
 	},
 	"bugs": {
-		"url": "https://github.com/syrus-bot/PROJECT/issues"
+		"url": "https://github.com/syrus-bot/keyhole/issues"
 	},
-	"homepage": "https://github.com/syrus-bot/PROJECT#readme"
+	"homepage": "https://github.com/syrus-bot/keyhole#readme"
 }
