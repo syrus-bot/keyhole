@@ -4,10 +4,13 @@
 	"description": "A CLI tool for detecting untranslated keys using i18next and @scp/in17n.",
 	"main": "src/main.js",
 	"scripts": {
-		"start": "npm run lint && cd src && node main",
+		"start": "npm run lint && node src/main.js",
 		"test": "npx nyc --reporter=lcov mocha test/**/*.test.js",
 		"lint": "npx eslint src --ext .json,.js --fix",
 		"gpr": "git pull && npm start"
+	},
+	"bin": {
+		"keyhole": "bin/keyhole.js"
 	},
 	"author": {
 		"name": "Nytelife26 (Tyler J. Russell)",
