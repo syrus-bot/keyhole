@@ -3,7 +3,7 @@
 const cli = require("../src/main.js");
 const parse = require("../src/lib/parse.js");
 
-const args = parse(process.argv);
+const args = parse(process.argv.slice(2));
 try {
 	cli(args)
 } catch (err) {
