@@ -14,7 +14,7 @@ module.exports = function parse(args) {
 	for (const arg of args) {
 		if (["-r", "--recursive"].includes(arg)) {
 			MODES.RECURSIVE = true;
-		} else if (["-u", "--untranslated"].includes(arg)) {
+		} else if (["-u", "--unused"].includes(arg)) {
 			MODES.ORPHANED = true;
 		} else {
 			try {

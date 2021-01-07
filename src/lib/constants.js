@@ -1,9 +1,9 @@
 module.exports = {
-	HELP: `keyhole [-R] [-U] <languages-path> <path>
+	HELP: `keyhole [--recursive|-r] [--unused|-u] <languages-path> <path>
 
-    -R  -   (R)ecursively scan directory
+    -r  -   (r)ecursively scan directory
 
-    -U  -   Show (U)nused keys mode
+    -u  -   Show (u)nused keys mode
             This will show all keys that are available in translation but are not used in any files.
 
     The default behaviour is to show untranslated keys.
