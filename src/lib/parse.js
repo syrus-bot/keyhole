@@ -18,7 +18,8 @@ module.exports = function parse(args) {
 			MODES.ORPHANED = true;
 		} else {
 			try {
-				accessSync(arg, constants.F_OK || constants.R_OK);
+				/* eslint-disable-next-line no-bitwise */
+				accessSync(arg, constants.F_OK | constants.R_OK);
 				PATHS.push(arg);
 			} catch (error) {
 				console.log(error.message);
