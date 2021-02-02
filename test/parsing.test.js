@@ -21,17 +21,17 @@ describe("argument parsing", function () {
 		const mockResults = generate([], false, false, true);
 		test("node main.js -h", mockResults);
 		test("node main.js --help", mockResults);
-		test("node main.js --help -R -U", mockResults);
+		test("node main.js --help -r -u", mockResults);
 	});
 
 	it("should detect recursion flag", () => {
 		const mockResults = generate([], true, false, false);
-		test("node main.js -R", mockResults);
+		test("node main.js -u", mockResults);
 	});
 
 	it("should detect orphaning flag", () => {
 		const mockResults = generate([], false, true, false);
-		test("node main.js -U", mockResults);
+		test("node main.js -u", mockResults);
 	});
 
 	it("should detect paths", () => {
